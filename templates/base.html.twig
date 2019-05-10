@@ -1,0 +1,25 @@
+
+<body>
+	
+
+<a href="{{ path('Blog_add') }}">
+    Lien vers l'ajout d'article
+</a>
+{% if id is defined %}
+   <a href="{{ path('Blog_edit', { 'id' : id }) }}">
+    Lien vers la modification d'article
+    </a>
+    <a href="{{ path('Blog_remove', {'id' : id}) }}">
+    Lien vers la suppression d'article
+
+</a>
+{% endif %}
+
+{% if url is defined %}
+<a href="{{ path('Blog_show', {'url' : url}) }}">
+    Lien vers les articles
+
+</a>
+{% endif %}
+
+</body>

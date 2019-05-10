@@ -1,0 +1,35 @@
+# config/routes.yaml
+
+Blog_index:
+    path: /
+    controller: App\Controller\BlogController::index
+
+Blog_form:
+    path: /form
+    controller: App\Controller\ArticleController::form
+
+Blog_add:
+    path: /add
+    controller: App\Controller\ArticleController::add
+
+Blog_show:
+    path: /show
+    controller: App\Controller\ArticleController::show
+
+Blog_edit:
+    path: /edit/{id}
+    controller: App\Controller\BlogController::edit
+
+Blog_remove:
+    path: /remove/{id}
+    controller: App\Controller\BlogController::remove
+
+
+Blog_showOne:
+    path: /showone/{id}
+    controller: App\Controller\ArticleController::showOne
+
+Blog_new:
+    path: /new
+    controller: App\Controller\TaskController::new
+
